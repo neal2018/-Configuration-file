@@ -1,0 +1,28 @@
+{
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.inheritEnv": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "omnisharp.loggingLevel": "trace",
+    "omnisharp.path": "1.34.15",
+    "python.jediEnabled": false,
+    "workbench.settings.useSplitJSON": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4,AccessModifierOffset: -4}",
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc-9 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++-9 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc-9 -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    }
+}
