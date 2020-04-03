@@ -1,2 +1,2 @@
-# -Configuration-file
-my useful configuration file
+# Configuration-file
+my useful configuration file, free to use if you like
