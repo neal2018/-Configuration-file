@@ -8,3 +8,6 @@ About vim:
 About zsh:
 1. install [oh-my-zsh](https://ohmyz.sh/)
 2. install [theme-spaceship](https://github.com/denysdovhan/spaceship-prompt)
+
+About font:
+1. install [Fira Code](https://github.com/tonsky/FiraCode)
