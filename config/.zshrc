@@ -68,7 +68,11 @@ SPACESHIP_CONDA_SYMBOL=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-syntax-highlighting                            
+    zsh-autosuggestions 
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,5 +117,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-source /home/neal/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
