@@ -8,8 +8,9 @@ About vim:
 About zsh:
 1. install [oh-my-zsh](https://ohmyz.sh/)
 2. install [theme-spaceship](https://github.com/denysdovhan/spaceship-prompt)
-4. install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-3. hide (base) of conda: `conda config --set changeps1 False`
+3. install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+4. install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+5. hide (base) of conda: `conda config --set changeps1 False`
 
 About font:
 1. install [Fira Code](https://github.com/tonsky/FiraCode)
