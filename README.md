@@ -27,6 +27,8 @@ tealdeer v1.6.1:
     tldr
 tokei v12.1.2:
     tokei
+zellij v0.38.2:
+    zellij
 zoxide v0.9.2:
     zoxide
 ```
