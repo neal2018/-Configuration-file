@@ -117,3 +117,38 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+if hash exa 2>/dev/null; then
+    alias ls='exa'
+    alias l='exa -l --all --group-directories-first --git'
+    alias ll='exa -l --all --all --group-directories-first --git'
+    alias lt='exa -T --git-ignore --level=2 --group-directories-first'
+    alias llt='exa -lT --git-ignore --level=2 --group-directories-first'
+    alias lT='exa -T --git-ignore --level=4 --group-directories-first'
+    alias la='exa -lah'
+else
+    alias l='ls -lah'
+    alias ll='ls -alF'
+    alias la='ls -a'
+fi
+alias cat='bat --paging=never --style=plain'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# for wsl 2 only
+host_ip=$(ip route | awk '/default/ {print $3}')
+export all_proxy="http://$host_ip:7890"
+export ALL_PROXY="http://$host_ip:7890"
+export HTTP_PROXY="http://$host_ip:7890"
+export HTTPS_PROXY="http://$host_ip:7890"
+export http_proxy="http://$host_ip:7890"
+export https_proxy="http://$host_ip:7890"
+
+git config --global http.proxy "http://$host_ip:7890"
+git config --global https.proxy "http://$host_ip:7890"
